@@ -3,38 +3,7 @@
    ========================================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Profile Switcher Logic
-    const body = document.body;
-    const btnResearch = document.getElementById('btn-research');
-    const btnEtrm = document.getElementById('btn-etrm');
 
-    // Define the profile switcher function
-    const setProfile = function(profile) {
-        if (profile === 'research') {
-            body.classList.remove('profile-etrm');
-            body.classList.add('profile-research');
-            
-            btnEtrm.classList.remove('active');
-            btnResearch.classList.add('active');
-            
-            localStorage.setItem('arvind-portfolio-profile', 'research');
-        } else if (profile === 'etrm') {
-            body.classList.remove('profile-research');
-            body.classList.add('profile-etrm');
-            
-            btnResearch.classList.remove('active');
-            btnEtrm.classList.add('active');
-            
-            localStorage.setItem('arvind-portfolio-profile', 'etrm');
-        }
-    };
-
-    // Make it available globally for the inline onclick handlers in HTML
-    window.setProfile = setProfile;
-
-    // Retrieve saved profile preference or default to 'research' and apply it
-    const savedProfile = localStorage.getItem('arvind-portfolio-profile') || 'research';
-    setProfile(savedProfile);
 
     // 2. Mobile Menu Toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
