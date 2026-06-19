@@ -8,12 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnResearch = document.getElementById('btn-research');
     const btnEtrm = document.getElementById('btn-etrm');
 
-    // Retrieve saved profile preference or default to 'research'
-    const savedProfile = localStorage.getItem('arvind-portfolio-profile') || 'research';
-    setProfile(savedProfile);
-
-    // Make setProfile available globally (for inline onclick handlers)
-    window.setProfile = function(profile) {
+    // Define the profile switcher function
+    const setProfile = function(profile) {
         if (profile === 'research') {
             body.classList.remove('profile-etrm');
             body.classList.add('profile-research');
@@ -32,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('arvind-portfolio-profile', 'etrm');
         }
     };
+
+    // Make it available globally for the inline onclick handlers in HTML
+    window.setProfile = setProfile;
+
+    // Retrieve saved profile preference or default to 'research' and apply it
+    const savedProfile = localStorage.getItem('arvind-portfolio-profile') || 'research';
+    setProfile(savedProfile);
 
     // 2. Mobile Menu Toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
