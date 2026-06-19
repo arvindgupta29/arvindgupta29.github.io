@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Arvind Gupta | Green Hydrogen & ETRM Consultant</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Dr. Arvind Gupta, PhD (IISc). Energy Trading & Risk Management (ETRM) consultant and Sustainable Technologies researcher specializing in green hydrogen, industrial decarbonisation, and market risk analytics.">
+    <meta name="keywords" content="Arvind Gupta, PhD, IISc, Green Hydrogen, ETRM, CTRM, Energy Trading, Risk Management, Decarbonisation, Biomass Gasification, Pune, Infosys, Endur">
+    <meta name="author" content="Dr. Arvind Gupta">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arvindgupta29.github.io/">
+    <meta property="og:title" content="Dr. Arvind Gupta | Green Hydrogen & ETRM Consultant">
+    <meta property="og:description" content="Expertise spanning ETRM consulting (market risk analytics, daily EOD reporting, Kafka streaming migration) and sustainable energy research (pilot-scale green hydrogen, oxy-steam gasification).">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-research">
+    <!-- Sticky Glassmorphic Header -->
+    <header id="site-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-title">Arvind Gupta</span><span class="logo-subtitle">, PhD</span>
+            </a>
+            
+            <nav id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#patents-publications" class="nav-link">Patents & Publications</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#awards" class="nav-link">Recognition</a>
+                <a href="#contact" class="nav-link btn-contact">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Profile Selector (Sticky Sub-bar) -->
+    <div id="profile-selector-container">
+        <div class="profile-selector">
+            <span class="selector-label">Viewing Profile:</span>
+            <div class="switcher-buttons">
+                <button id="btn-research" class="switch-btn active" onclick="setProfile('research')" aria-label="Switch to Researcher & Decarbonisation Profile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                    </svg>
+                    Research &amp; Decarbonisation
+                </button>
+                <button id="btn-etrm" class="switch-btn" onclick="setProfile('etrm')" aria-label="Switch to ETRM & Energy Analytics Profile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    ETRM &amp; Energy Analytics
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">Pune, India</div>
+                    <h1 class="hero-title">Dr. Arvind Gupta</h1>
+                    
+                    <!-- Research Tagline -->
+                    <div class="tagline tagline-research">
+                        Research scientist &amp; techno-commercial analyst working at the intersection of <span>hydrogen</span>, <span>industrial decarbonisation</span>, and <span>energy-transition strategy</span>.
+                    </div>
+                    
+                    <!-- ETRM Tagline -->
+                    <div class="tagline tagline-etrm">
+                        Energy Trading &amp; Risk Management (<span>ETRM/CTRM</span>) consultant specializing in <span>market risk analytics</span>, <span>digital migrations</span>, and <span>energy systems modelling</span>.
+                    </div>
+                    
+                    <p class="hero-summary tagline-research">
+                        Ph.D. from the Indian Institute of Science (IISc) Bangalore, with 2 granted patents in oxy-steam biomass gasification. Expert in scaling clean tech and designing state-level green hydrogen ecosystem frameworks.
+                    </p>
+                    <p class="hero-summary tagline-etrm">
+                        Experienced in supporting a major European utility across power, gas, coal, oil, weather derivatives, and hydro portfolios. Successfully led Kafka migrations and Azure-based market risk integrations.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="mailto:arvgup29@gmail.com" class="social-item" title="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>arvgup29@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/arvindgupta29" target="_blank" rel="noopener" class="social-item" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>linkedin.com/in/arvindgupta29</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0003-4033-178X" target="_blank" rel="noopener" class="social-item" title="ORCID">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14H9V8h4a4 4 0 0 1 0 8z"></path></svg>
+                            <span>ORCID Record</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=x7EORCUAAAAJ" target="_blank" rel="noopener" class="social-item" title="Google Scholar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2.7 3.5 6 3.5s6-1.5 6-3.5v-5"></path></svg>
+                            <span>Google Scholar</span>
+                        </a>
+                        <a href="https://1drv.ms/b/c/1ddb4e814b809965/IQDgt7Wiu1JoSoNHfx7Qms6RAVzwlawdNdq93ALhi0GEcLU?e=uo7NNU" target="_blank" rel="noopener" class="social-item cv-download" title="Download CV">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download CV (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile Bio -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <!-- Research Narrative -->
+                        <div class="narrative narrative-research">
+                            <p>
+                                I am a research scientist and techno-commercial advisor focused on accelerating the global energy transition. My expertise lies in pilot-scale green hydrogen production technologies, industrial decarbonisation strategies (particularly steel industry DRI-EAF transitions), and regional energy policy planning.
+                            </p>
+                            <p>
+                                During my doctoral work at the <strong>Indian Institute of Science (IISc)</strong>, I designed and operated pilot-scale gasification systems, leading to two granted patents and establishing one of the highest reported hydrogen yields from oxy-steam gasification. My independent advisory work bridges academic research with actionable policy, such as modelling the green hydrogen roadmap for North-East India and deploying AI-enabled policy intelligence platforms.
+                            </p>
+                        </div>
+                        
+                        <!-- ETRM Narrative -->
+                        <div class="narrative narrative-etrm">
+                            <p>
+                                I am an Energy Trading &amp; Risk Management (ETRM/CTRM) professional with a strong track record of delivering high-impact digital transformations and risk reporting operations for major European utilities. I specialise in managing complex data pipelines across power, gas, coal, oil, weather derivatives, and hydro virtual power plant (VPP) trading desks.
+                            </p>
+                            <p>
+                                With experience at <strong>Infosys</strong>, I have led critical migrations of End-of-Day (EOD) risk reporting to Kafka streaming pipelines—slashing report latency by 60–80%—and integrated advanced Azure FMP market risk models into corporate ERP systems. I combine deep technical expertise (Python, SQL, database migrations) with thorough stakeholder alignment and business validation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="card-num">02</div>
+                            <div class="card-label">Granted Patents (IP India)</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="card-num">09+</div>
+                            <div class="card-label">Years of Energy R&amp;D</div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="card-num">60%</div>
+                            <div class="card-label">Risk Pipeline Latency Reduction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Competencies Grid -->
+                <div class="competencies-box">
+                    <h3 class="sub-section-title">Core Competencies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category cat-research active-highlight">
+                            <h4>Hydrogen &amp; Decarbonisation</h4>
+                            <ul>
+                                <li>Oxy-steam biomass gasification &amp; syngas production</li>
+                                <li>Thermodynamic &amp; exergy system analysis</li>
+                                <li>Green hydrogen production pathways &amp; economics (LCOH)</li>
+                                <li>Industrial decarbonisation strategy (DRI-EAF transitions)</li>
+                                <li>Process modeling &amp; DOE-based optimization</li>
+                                <li>Energy systems modelling</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category cat-etrm">
+                            <h4>ETRM / CTRM Consulting</h4>
+                            <ul>
+                                <li>Market Risk Analytics (P&amp;L, VaR, LaR, positions)</li>
+                                <li>Daily EOD reporting workflow operations</li>
+                                <li>Commodity trading products (Power, Gas, Weather, Coal, Oil, Hydro)</li>
+                                <li>Trading platforms (Endur, RightAngle integration)</li>
+                                <li>User Acceptance Testing (UAT) &amp; hypercare rollouts</li>
+                                <li>Stakeholder management &amp; functional design docs</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category cat-tech">
+                            <h4>Simulation &amp; Technology</h4>
+                            <ul>
+                                <li>MATLAB &amp; Origin data analysis</li>
+                                <li>Python scripting &amp; ETL data pipelines</li>
+                                <li>SQL querying &amp; schema understanding</li>
+                                <li>Kafka streaming architecture</li>
+                                <li>Azure FMP calculator APIs</li>
+                                <li>German language (A2 level, active learning)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience" class="section-padding section-light">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="timeline">
+                    <!-- Independent Work -->
+                    <div class="timeline-item type-research focus-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-info">
+                            <span class="timeline-date">Nov 2025 – Present</span>
+                            <h3 class="timeline-role">Independent Research, Advisory &amp; Product Developer</h3>
+                            <h4 class="timeline-company">Green Hydrogen Strategy | Industrial Decarbonisation | Policy Intelligence</h4>
+                        </div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li><strong>State Green Hydrogen Strategy</strong>: Developed a comprehensive green hydrogen ecosystem roadmap for Meghalaya, including renewable potential assessment (3,000 MW hydro, solar, wind), LCOH trajectory modeling to 2040, a 6-stage research framework for a 60 kg/day proto-electrolyzer, GIS-based site selection, export pathways, and financing models (MNRE grants, green bonds).</li>
+                                <li><strong>AI-Enabled Policy Intelligence Platform</strong>: Designed and deployed a live intelligence system for the Indian energy sector, integrating regulatory updates on hydrogen, biomass, storage, and open-access frameworks.</li>
+                                <li><strong>Steel Decarbonisation Proposal</strong>: Developed a postdoctoral research proposal on DRI-EAF transition economics, hydrogen demand modelling, and biomass-hydrogen integration. Placed on the <em>Reserve List</em> for the prestigious <strong>EU MSCA Postdoctoral Fellowship</strong> with IDOM Engineering (Bilbao) as the host.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Infosys Senior Consultant -->
+                    <div class="timeline-item type-etrm focus-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-info">
+                            <span class="timeline-date">Jul 2023 – Jan 2025</span>
+                            <h3 class="timeline-role">Senior Associate Consultant</h3>
+                            <h4 class="timeline-company">Infosys Limited — Energy Trading &amp; Risk Management (ETRM)</h4>
+                            <span class="client-badge">Client: Major European Energy Utility | Bengaluru, India</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li><strong>Kafka Streaming Migration</strong>: Led the migration of EOD risk reporting from legacy MS SQL to Kafka-based streaming pipelines, reducing reporting latency by <strong>60%–80%</strong> and improving resilience and SLA compliance across power, gas, coal, oil, weather, and hydro trading desks.</li>
+                                <li><strong>Azure Market Risk Integration</strong>: Led the technical integration of an Azure FMP-based market risk calculator into the client ERP via API, achieving 80% faster risk metrics and enabling on-demand parameter customization.</li>
+                                <li><strong>New Product Onboarding</strong>: Orchestrated the onboarding of Weather Trading and Hydro VPP products into EOD workflows. Owned scoping, test plans, UAT sign-offs, and hypercare, achieving zero critical regressions.</li>
+                                <li><strong>Stakeholder Delivery</strong>: Managed end-to-end workstreams from requirements to UAT and rollout. Authored functional designs, runbooks, and status reports for executive briefings.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Infosys Associate Consultant -->
+                    <div class="timeline-item type-etrm">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-info">
+                            <span class="timeline-date">Mar 2022 – Jun 2023</span>
+                            <h3 class="timeline-role">Associate Consultant</h3>
+                            <h4 class="timeline-company">Infosys Limited — Energy Trading &amp; Risk Management (ETRM)</h4>
+                            <span class="client-badge">Client: Major European Energy Utility | Bengaluru, India</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li>Delivered daily EOD market risk reports across power, coal, oil, gas, and derivatives desks using enterprise data originating from Endur and RightAngle, ensuring 100% compliance with accuracy and SLA requirements.</li>
+                                <li>Collaborated with trading, risk analytics, and engineering teams to investigate exceptions, resolve reporting anomalies, and document standard operating procedures (SOPs).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- IISc Research Scientist -->
+                    <div class="timeline-item type-research focus-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-info">
+                            <span class="timeline-date">2015 – 2024</span>
+                            <h3 class="timeline-role">Research Scientist &amp; PhD Researcher</h3>
+                            <h4 class="timeline-company">Indian Institute of Science (IISc), Sustainable Technologies</h4>
+                            <span class="client-badge">Full-time R&amp;D 2015–2022 | Industry-engaged completion 2022–2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li><strong>Pilot-Scale Gasification</strong>: Designed and operated experimental campaigns on a 10 kWth oxy-steam downdraft gasifier (5 kg/hr capacity). Achieved a peak hydrogen yield of <strong>110 g/kg-biomass</strong> (exceeding carbon boundary limits) at steam-to-biomass ratios up to 4.1.</li>
+                                <li><strong>Kinetic Modelling</strong>: Derived predictive Arrhenius kinetic rate equations for biomass-derived char beds at pilot scale. Discovered char-bed catalytic effects that enhance water-gas shift and steam-char reactions, achieving in-situ CO reforming and hydrogen enrichment without external catalysts.</li>
+                                <li><strong>Process Analysis</strong>: Conducted thermodynamic, mass-balance, and exergy analyses across feedstocks to optimize conversion efficiencies.</li>
+                                <li><strong>IP &amp; Dissemination</strong>: Co-invented <strong>two granted Indian patents</strong> on gasification systems. Published in peer-reviewed journals, presented at the 26th EUBCE in Copenhagen, and secured two competitive GARP travel grants.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Assistant Professor -->
+                    <div class="timeline-item type-research">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-info">
+                            <span class="timeline-date">Jul 2014 – Jun 2015</span>
+                            <h3 class="timeline-role">Assistant Professor (Mechanical Engineering)</h3>
+                            <h4 class="timeline-company">RGUKT (IIIT Basar) | Telangana, India</h4>
+                        </div>
+                        <div class="timeline-content">
+                            <p>Taught undergraduate coursework in Classical Thermodynamics and Solar Energy Technology. Supervised final-year project designs on renewable energy systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents & Publications -->
+        <section id="patents-publications" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Patents &amp; Publications</h2>
+                
+                <div class="publications-grid">
+                    <div class="pub-card patent-card">
+                        <div class="pub-badge">Granted Patent (IP India)</div>
+                        <h3 class="pub-title">Oxy-steam biomass gasification system for generating hydrogen-rich syngas</h3>
+                        <p class="pub-authors">S. Dasappa, A.M. Shivapuji, <strong>A. Gupta</strong></p>
+                        <p class="pub-meta">Patent No. 202241037110 (Granted 2022). System enabling high-yield hydrogen production from biomass via pilot-scale oxy-steam gasification.</p>
+                        <a href="https://patents.google.com/patent/WO2024003922A1/en" target="_blank" rel="noopener" class="pub-link">
+                            View Patent
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+
+                    <div class="pub-card patent-card">
+                        <div class="pub-badge">Granted Patent (IP India)</div>
+                        <h3 class="pub-title">A system for processing biomass and a method thereof</h3>
+                        <p class="pub-authors">S. Dasappa, A.M. Shivapuji, A. Singh, G.S. Ganesh, S.K. Sharma, <strong>A. Gupta</strong></p>
+                        <p class="pub-meta">Patent No. 202141002008 (Granted 2022). Integrated system covering biomass feedstock preparation, thermochemical conversion, and syngas optimization.</p>
+                        <a href="https://patents.google.com/patent/WO2022153232A1" target="_blank" rel="noopener" class="pub-link">
+                            View Patent
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+
+                    <div class="pub-card journal-card">
+                        <div class="pub-badge">Journal Paper</div>
+                        <h3 class="pub-title">Syngas Generation for Methanol Synthesis: Oxy-Steam Gasification Route Using Agroresidue as Fuel</h3>
+                        <p class="pub-authors">A. Singh*, <strong>A. Gupta*</strong>, N. Rakesh, A.M. Shivapuji, S. Dasappa (*Equal contribution)</p>
+                        <p class="pub-meta"><em>Biomass Conversion and Biorefinery</em>, 2022.</p>
+                        <a href="https://doi.org/10.1007/s13399-021-02128-y" target="_blank" rel="noopener" class="pub-link">
+                            DOI: 10.1007/s13399-021-02128-y
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+
+                    <div class="pub-card conference-card">
+                        <div class="pub-badge">Conference Proceeding</div>
+                        <h3 class="pub-title">Hydrogen from Biomass by Oxy-Steam Gasification — A Quantitative Analysis of Cases</h3>
+                        <p class="pub-authors"><strong>A. Gupta</strong>, S. Dasappa</p>
+                        <p class="pub-meta">Presented at the 26th European Biomass Conference and Exhibition (EUBCE), Copenhagen, 2018.</p>
+                        <a href="https://doi.org/10.5071/26thEUBCE2018-2CV.4.22" target="_blank" rel="noopener" class="pub-link">
+                            DOI: 10.5071/26thEUBCE2018-2CV.4.22
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section-padding section-light">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <span class="edu-year">2015 – 2024</span>
+                        <h3 class="edu-degree">Ph.D. in Sustainable Technologies</h3>
+                        <h4 class="edu-school">Indian Institute of Science (IISc), Bengaluru</h4>
+                        <p class="edu-thesis"><strong>Thesis:</strong> Thermochemical Conversion of Lignocellulosic Biomass to Generate Hydrogen-Rich Synthesis Gas for Hydrogen Production — An Experimental and Thermodynamic Study Using Oxy-Steam as the Gasification Agent</p>
+                        <div class="edu-tag">MoE Fellowship Recipient</div>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="edu-year">2012 – 2014</span>
+                        <h3 class="edu-degree">M.Tech. in Hydro &amp; Renewable Energy</h3>
+                        <h4 class="edu-school">Indian Institute of Technology (IIT), Roorkee</h4>
+                        <p class="edu-meta">Graduated with <strong>Distinction</strong> (CGPA: 8.5/10). Awarded the Ministry of Education postgraduate scholarship.</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="edu-year">2007 – 2011</span>
+                        <h3 class="edu-degree">B.Tech. in Mechanical Engineering</h3>
+                        <h4 class="edu-school">Dr. MGR Educational &amp; Research Institute, Chennai</h4>
+                        <p class="edu-meta">Secured <strong>University 2nd Rank</strong> (CGPA: 9.2/10). Award presented by the former President of India, <strong>Dr. A.P.J. Abdul Kalam</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards, Training & Certifications -->
+        <section id="awards" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Awards, Training &amp; Certifications</h2>
+                
+                <div class="awards-grid">
+                    <div class="award-list-card">
+                        <h3>Key Accolades &amp; Fellowships</h3>
+                        <ul class="clean-list">
+                            <li>
+                                <strong>EU MSCA Postdoctoral Fellowship Reserve List</strong> (AuSpire / IDOM Engineering, Bilbao, 2026). Shortlisted and interviewed under rigorous evaluation.
+                            </li>
+                            <li>
+                                <strong>GARP International Travel Grants</strong>, IISc Bangalore (2018, 2019) – awarded for outstanding research paper selection.
+                            </li>
+                            <li>
+                                <strong>PhD Fellowship</strong>, Ministry of Education, IISc (2015–2021).
+                            </li>
+                            <li>
+                                <strong>M.Tech Fellowship</strong>, Ministry of Education, IIT Roorkee (2012–2014).
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="award-list-card">
+                        <h3>Specialised International Training</h3>
+                        <ul class="clean-list">
+                            <li>
+                                <strong>Sotacarbo Summer School</strong> on CCUS and Low-Carbon Technologies (Carbonia, Italy, June 2019).
+                            </li>
+                            <li>
+                                <strong>National Workshop on Hydrogen Energy and Fuel Cells</strong> (NISE, Gurugram, 2017).
+                            </li>
+                            <li>
+                                <strong>International Combustion Institute Winter School</strong> (IIT Madras, 2015).
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="award-list-card full-width-card">
+                        <h3>Professional Certifications (Coursera)</h3>
+                        <div class="certifications-flex">
+                            <span class="cert-item">Machine Learning Specialisation</span>
+                            <span class="cert-item">Financial Markets</span>
+                            <span class="cert-item">Quantitative Modelling</span>
+                            <span class="cert-item">Fundamentals of Global Energy Business</span>
+                            <span class="cert-item">Python for Everybody</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding section-dark">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-subtitle">Let's discuss hydrogen strategy, ETRM digital transformations, or energy transition research.</p>
+                
+                <div class="contact-box">
+                    <div class="contact-info-panel">
+                        <div class="info-row">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:arvgup29@gmail.com">arvgup29@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-row">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+919172252167">+91 91722 52167</a>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Pune, India (Available for Relocation)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <div class="info-text">
+                                <h4>Languages</h4>
+                                <p>English (Fluent) | Hindi (Native) | German (A2) | Odia (Working)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-actions">
+                        <h3>Connect Digitally</h3>
+                        <p>Feel free to reach out via professional networks or review academic records.</p>
+                        <div class="action-buttons">
+                            <a href="https://linkedin.com/in/arvindgupta29" target="_blank" rel="noopener" class="btn btn-primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://orcid.org/0000-0003-4033-178X" target="_blank" rel="noopener" class="btn btn-secondary">
+                                ORCID Profile
+                            </a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=x7EORCUAAAAJ" target="_blank" rel="noopener" class="btn btn-secondary">
+                                Google Scholar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Dr. Arvind Gupta. All rights reserved.</p>
+            <p class="footer-note">Minimalist &amp; Clean Portfolio | Optimized for GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
