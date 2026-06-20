@@ -480,6 +480,34 @@ footer .footer-note {
     color: var(--text-muted);
 }
 
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-sm);
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: var(--transition);
+}
+
+#back-to-top:hover {
+    background-color: var(--color-hover-bg);
+    color: var(--color-hover-text);
+}
+
+#back-to-top:active {
+    transform: translateY(2px);
+}
+
 /* ==========================================================================
    Responsive Styles
    ========================================================================== */
