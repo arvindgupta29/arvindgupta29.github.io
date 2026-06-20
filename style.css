@@ -103,6 +103,30 @@ a:hover {
     color: var(--color-primary);
 }
 
+/* Boxed Menu Item (AI Agent Button) */
+.header .menu-item-boxed {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    padding: 0.15rem 0.6rem !important;
+    margin-top: 0.05rem;
+    margin-left: 0.5rem;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.header .menu-item-boxed a {
+    color: #ffffff !important;
+}
+
+.header .menu-item-boxed:hover {
+    background-color: var(--color-hover-bg);
+    border-color: var(--color-hover-bg);
+}
+
+.header .menu-item-boxed:hover a {
+    color: var(--color-hover-text) !important;
+}
+
 /* Page Layout */
 .content-wrapper {
     max-width: 860px;
@@ -478,6 +502,12 @@ footer .footer-note {
     .header .menu-item {
         float: none;
         padding: 0.25rem 0.5rem;
+    }
+    
+    .header .menu-item-boxed {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0.25rem 0.6rem !important;
     }
     
     .introduction-wrapper {

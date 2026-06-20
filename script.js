@@ -18,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute('id');
                 menuLinks.forEach(link => {
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.style.color = 'var(--color-hover-text)';
-                        link.style.fontWeight = '700';
-                    } else {
-                        link.style.color = 'var(--text-color)';
-                        link.style.fontWeight = '500';
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        if (href === `#${id}`) {
+                            link.style.color = 'var(--color-hover-text)';
+                            link.style.fontWeight = '700';
+                        } else {
+                            link.style.color = 'var(--text-color)';
+                            link.style.fontWeight = '500';
+                        }
                     }
                 });
             }
