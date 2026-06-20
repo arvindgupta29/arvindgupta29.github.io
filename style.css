@@ -118,16 +118,16 @@ a:hover {
 }
 
 .introduction-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    display: block;
+    overflow: auto;
 }
 
 /* Left Sidebar Contact Card */
 .photo-wrapper {
-    width: 38%;
-    flex-shrink: 0;
+    float: left;
+    width: 290px;
+    margin-right: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .contact-sidebar-card {
@@ -211,7 +211,7 @@ a:hover {
 
 /* Right Main Narrative Bio */
 .description-wrapper {
-    width: 62%;
+    width: auto;
 }
 
 .page-title {
@@ -481,12 +481,14 @@ footer .footer-note {
     }
     
     .introduction-wrapper {
-        flex-direction: column;
-        gap: 1.5rem;
+        display: block;
     }
     
     .photo-wrapper {
+        float: none;
         width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
     
     .description-wrapper {
