@@ -35,4 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     sections.forEach(section => observer.observe(section));
+
+    // 2. Visitor Counter
+    const visitorSpan = document.getElementById('visitor-count');
+    if (visitorSpan) {
+        fetch('https://api.counterapi.dev/v1/arvindgupta29/portfolio/up')
+            .then(response => response.json())
+            .then(data => {
+                if (data && typeof data.count === 'number') {
+                    visitorSpan.textContent = data.count.toLocaleString();
+                } else {
+                    visitorSpan.textContent = '—';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching counter:', error);
+                visitorSpan.textContent = '—';
+            });
+    }
 });
